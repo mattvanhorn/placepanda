@@ -10,7 +10,7 @@ class PandaPicker
     puts "Preloading pics"
     start_time = Time.now
     images = []
-    dir = Rails.root.join('app', 'assets', 'images', 'pandas')
+    dir = Rails.root.join('public', 'assets', 'pandas')
     Dir.entries( dir ).collect{ |f| f if f =~ /\.jpg/ }.compact.each do |pic|
       mag = Magick::Image.read( "#{dir}/#{pic}" ).first
       p = Pic.new( mag, mag.columns, mag.rows )

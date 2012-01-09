@@ -3,7 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.1'
 gem 'pg'
 gem 'thin'
-gem "haml-rails"
+gem 'haml-rails'
+gem 'rmagick'
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -1,4 +1,4 @@
-#container
+.container
   #content
     %header
       %h1 placepanda
@@ -13,8 +13,14 @@
       %p Like this: http://placepanda.com/200/300 or: http://placepanda.com/g/200/300
 
     #pandapics
-      = image_tag('panda.jpg')
+      = image_tag('panda.png')
 
     %footer
-      %p Made by Matt Van Horn, inspired by placekitten
+      %p
+        Made by Matt Van Horn, inspired by  Mark James &amp;
+        = link_to "placekitten.com", "http://placekitten.com"
+        with code liberally borrowed from
+        = link_to "placedog.com", "http://github.com/JGaudette/PlaceDog"
+        for the purposes of
+        =link_to "the blog post here", "http://www.mattvanhorn.com/2012/01/07/heroku-cedar-assets-ruby-1-9/"
 
