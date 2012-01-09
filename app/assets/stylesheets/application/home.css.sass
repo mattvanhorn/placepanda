@@ -1,19 +1,41 @@
-#container
-  #content
-    header
-      h1
-        font-size: 2em
-    footer
-      p
-        font-size: 0.8em
+@import "blueprint/grid"
+@import "blueprint/typography"
+
+.container
+  +container
+  overflow: auto
+
+#content
+  header
+    +push(1)
+    +column(23, last)
+  footer
+    +push(1)
+    +column(22)
+    text-align: center
 
 #description
-  float: left
-
+  +push(1)
+  +column(10)
+  background: black
+  color: white
+  font-weight: bold
+  height: 8em
+  p
+    padding: 10px
 #instructions
-  float: right
+  +push(2)
+  +column(10, true)
+  background: white
+  //border: 1px solid black
+  color: black
+  font-weight: bold
+  height: 8em
+  p
+    padding: 10px
 
 #pandapics
-  clear: both
-
+  +push(1)
+  img
+    display: block
 

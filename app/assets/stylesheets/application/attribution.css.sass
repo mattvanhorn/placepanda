@@ -1,0 +1,31 @@
+@import "blueprint/grid"
+@import "blueprint/typography"
+
+body
+  +blueprint-typography(true)
+
+.container
+  +container
+  margin: 0 auto
+  position: relative
+  overflow: hidden
+  ul
+    margin: 0 -10px 0 0
+    padding: 0
+    overflow: hidden
+    list-style-type: none
+    position: relative
+    li.panda
+      width: span(4)
+      float: left
+      list-item-type: none
+      display: inline-block
+      margin-right: 10px
+      text-align: center
+      a
+        img
+      .license
+        width: span(4)
+      .photographer
+        width: span(4)
+        font-weight: bold
