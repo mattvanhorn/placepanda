@@ -1,7 +1,7 @@
 .container
   #content
     %header
-      %h1 placepanda
+      %h1 pandaholder.com
 
     #description
       %p
@@ -17,10 +17,16 @@
 
     %footer
       %p
-        Made by Matt Van Horn, inspired by  Mark James &amp;
+        Made by
+        = link_to "Matt Van Horn", "http://www.mattvanhorn.com"
+        inspired by
+        = link_to "Mark James", "http://mark.james.name/"
+        &amp;
         = link_to "placekitten.com", "http://placekitten.com"
         with code liberally borrowed from
         = link_to "placedog.com", "http://github.com/JGaudette/PlaceDog"
         for the purposes of
         =link_to "the blog post here", "http://www.mattvanhorn.com/2012/01/07/heroku-cedar-assets-ruby-1-9/"
+      %p
+        link_to "Image Attribution", '/attribution'
 
